@@ -6,7 +6,7 @@ import standard from "figlet/importable-fonts/Standard.js";
 figlet.parseFont("Standard", standard);
 
 export default function Home() {
-  const [inputText, setInputText] = useState("1DV610");
+  const [inputText, setInputText] = useState("");
   const [asciiOutput, setAsciiOutput] = useState("");
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export default function Home() {
               <span className="text-blue-400">user@terminal</span>
               <span className="text-white">:</span>
               <span className="text-blue-400">~</span>
-              <span className="text-white">$ Ascii-art</span>
+              <span className="text-white">$ ascii-art</span>
             </div>
 
             <pre className="text-green-400 font-mono text-sm overflow-x-auto mb-4 min-h-[120px]">
@@ -66,7 +66,7 @@ export default function Home() {
                 <span className="text-blue-400">user@terminal</span>
                 <span className="text-white">:</span>
                 <span className="text-blue-400">~</span>
-                <span className="text-white">$ Ascii-art "</span>
+                <span className="text-white">$ ascii-art "</span>
               </span>
               <textarea
                 value={inputText}
